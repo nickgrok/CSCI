@@ -1,0 +1,48 @@
+// Problem 4
+// @author Nicholas Grokhowsky
+
+// Per the piazza discussion on 3/1 by Elliot Trilling and answered by David Habermehl, I did make r an int in order to show how the ArithmeticException is thrown
+
+import java.util.*;
+import java.io.*;
+
+class Prob4
+{
+	public static void main(String[]args)
+	{
+
+
+		Scanner keyboard = new Scanner (System.in);
+		
+		int n1, n2;
+
+		boolean loop = true; 									// Added boolean to check if loop should close or remain open
+
+		do      												// do-while loop to contiuously ask for input should the input be incorrect	
+		{
+			try 												// try block to try code in question
+			{
+				System.out.print("Type an int: ");
+				n1 = keyboard.nextInt();
+				System.out.print("Now type another int: ");
+				n2 = keyboard.nextInt();
+				int r = n1 / n2;
+				System.out.println(r);
+				loop = false;									// Make loop variable equal to false in order to close loop
+				
+			} 
+
+			catch(InputMismatchException e) 					// catch block to catch if the value entered is not a number value
+			{
+				System.out.println("That was not an int.  Please start over.");
+				keyboard.next();
+			}
+
+			catch(ArithmeticException e) 						// catch block to catch if the denominator of the values being divided equals to zero
+			{
+				System.out.println("The divisor cannot equal zero.  Please start over.");
+				
+			}
+		}while(loop==true);
+	}
+}

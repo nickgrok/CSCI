@@ -1,0 +1,22 @@
+// Problem 2
+// @author Nicholas Grokhowsky
+
+a) This would make sense because ovens are pieces of a kitchen
+
+b) This would make sense because guitars are types of instruments
+
+c) This does not make sense because not all people are employees, some are employers, some are unemployed!
+
+d) This does not make sense because Ferrari's are not types of engines
+
+e) This does make sense because fried eggs are a type of food
+
+f) This would make sense because Beagles are a dog which is a pet, but it would make more sense to have Beagle extend Dog which extends Pets
+
+g) This does not make sense because a container is not a type of jar, but a jar is a type of container
+
+h) This does not make sense because a Martini is a type of Beverage
+
+i) This does not make sense because Titanium is a type of Metal
+
+j) This does make sense because the Stones are a type of RockBand

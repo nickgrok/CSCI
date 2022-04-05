@@ -1,0 +1,10 @@
+// Problem 1
+// @author Nicholas Grokhowsky
+
+1. Cell c = new BloodCell(); 			//This is valid.  This should create a new BloodCell object named c because BloodCell is a sub-class of Cell
+
+2. Cell c = new RedBloodCell(); 		//This is valid.  This should create a new RedBloodCell object named c because RedBloodCell is a sub-class of Cell
+
+3. BloodCell c = new RedBloodCell();	//This is valid.  This should create a new RedBloodCell object named c because RedBloodCell is a sub-class of BloodCell
+
+4. RedBloodCell c = new BloodCell(); 	//This is invalid.  The BloodCell object named c will not be created, and the program won't compile, because BloodCell is a parent-class of RedBloodCell.  

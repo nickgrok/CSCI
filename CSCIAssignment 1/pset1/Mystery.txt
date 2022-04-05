@@ -1,0 +1,6 @@
+// Problem 1
+// @author Nicholas Grokhowsky
+
+The new values in a1 equal:
+
+{26, 19, 14, 11, 10}
