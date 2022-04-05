@@ -1,0 +1,77 @@
+# depslib dependency file v1.0
+1533582370 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 6/PS6/main.cpp
+	<iostream>
+	<iomanip>
+	<ctime>
+	<cstdlib>
+	<time.h>
+	<sstream>
+	<fstream>
+	<string>
+	<array>
+	<vector>
+	<cmath>
+	"ps6.h"
+
+1533569158 /home/nick/Documents/CSCI E-38/Assignments/Assignment 6/PS6/ps6.h
+	<iostream>
+	<vector>
+	<initializer_list>
+
+1533488761 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 6/PS6/Money.cpp
+	<iostream>
+	<iomanip>
+	<ctime>
+	<cstdlib>
+	<time.h>
+	<sstream>
+	<fstream>
+	<string>
+	<array>
+	<vector>
+	<cmath>
+	"ps6.h"
+
+1533431861 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 6/PS6/part1.cpp
+	<iostream>
+	<iomanip>
+	<ctime>
+	<cstdlib>
+	<time.h>
+	<sstream>
+	<fstream>
+	<string>
+	<array>
+	<vector>
+	<cmath>
+	"ps6.h"
+
+1533571043 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 6/PS6/part2.cpp
+	<iostream>
+	<iomanip>
+	<ctime>
+	<cstdlib>
+	<time.h>
+	<sstream>
+	<fstream>
+	<string>
+	<array>
+	<vector>
+	<cmath>
+	"ps6.h"
+
+1533584775 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 6/PS6/SafeArray.cpp
+	<iostream>
+	<iomanip>
+	<ctime>
+	<cstdlib>
+	<time.h>
+	<sstream>
+	<fstream>
+	<string>
+	<array>
+	<vector>
+	<cmath>
+	<initializer_list>
+	"ps6.h"
+
