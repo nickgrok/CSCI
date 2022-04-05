@@ -1,0 +1,72 @@
+// Problem Set 3
+// @ author Nicholas Grokhowsky, nickgrok@gmail.com
+// CSCI E-22, Harvard University
+// Fall 2018
+
+import java.util.*;
+
+class Problem3
+{
+	public static void main (String [] args)
+	{
+
+		System.out.println(mystery(0, 0));
+
+	}
+
+	public static int mystery(int a, int b)
+	{
+		if (a <= b)
+		{
+			return a;
+		}
+
+		else
+		{
+			return b + mystery(a - 3, b + 1);
+		}
+
+	}
+
+
+}
+
+
+
+
+1)
+	main() calls mystery(10, 1)
+
+		mystery(10, 1) calls mystery(7, 2)
+
+			mystery(7, 2) calls mystery(4, 3)
+
+				mystery(4, 3) calls mystery(1, 4)
+
+					mystery(1, 4) returns 1
+
+				mystery(4,3) returns 3 + 1 OR 4
+
+			mystery(7,2) returns 2 + 4 OR 6
+
+		mystery(10, 1) returns 1 + 6 OR 7
+
+	main()
+
+2) mystery(10, 1) = 7
+
+3) There are 5 method frames on the stack when the base case is reached
+
+	They are:
+
+	- main()
+		- mystery(10, 1)
+			- mystery(7, 2)
+				- mystery(4, 3)
+					- mystery(1, 4)
+
+4) I don't believe infinite reursion will occur because the base case checks for '<='  If the base case was not specific enough and used '=='
+there would be a possibility for infinite recursion. 
+
+
+

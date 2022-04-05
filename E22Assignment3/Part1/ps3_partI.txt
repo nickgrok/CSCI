@@ -1,0 +1,108 @@
+@author Nicholas Grokhowsky, nickgrok@gmail.com
+CSCI E-22, Harvard University
+Fall 2018
+
+Problem 1: Initializing a doubly linked list
+
+
+public class DNode 
+{
+	private char ch;
+	private DNode next;
+	private DNode prev;
+}
+
+public static DNode initNextFields(DNode last)
+{
+	DNode temp;
+	last.next = null;
+	
+	while(last.prev != null)
+	{
+		temp = last;
+		last = last.prev;
+		last.next = temp; 
+	}
+
+	return last;
+}
+
+
+Problem 2: Choosing an appropriate list implementation
+
+1. For this example the ADT of ArrayList would be the most efficient.  This is because we are not adding or removing from the list much, and the primary operation would bet to get items.  The time efficiency of this would be constant, O(1), because we are looking for just one item at a time.  The space efficiency would be O(m), where m is the maximum length of the list.  Because m is constant there will not be much, if any, wasted memory.    
+
+2. For ths example the ADT of LLList would be the better choice.  This is because the size of the list varies each week.  If the list size was consistant I would recommend an ArrayList because we would be adding to the end and getting from the end, but the inconsistant list size makes the LLList the better option.  I would also recommend optimizing the list by adding a reference to the end.  With this optimization adding and getting the last item will be O(1), like the ArrayList would be, but the LLList will allow the size flexibility with O(n) efficiency each week.
+
+3. For this example the ADT of LLList would be the best option.  This is because we need to retrieve events in chronological order after they are added in chronological order.  This makes it a FIFO list, and the LLList has the highest efficiency for this being O(1).  The space efficiency is also O(n), which in this case would be good because the events on the calendar are not always consistant.  Even if they are consistant it would not make much difference because with the LLList we are always using just the amount of memory we need to use.  
+
+
+Problem 3: Reversing a linked list
+
+1.  The worst case running time for this algorithm is O(n^3) because we have to walk the whole list each time the getItem() method calls the list, then we walk the new list rev each time we call the addItem() method.  This all occurs within the iteration of the list within the reverse() method.  In other words, we are iterating over the list once within the reverse() method, and within this iteration we are walking down the list once with the getItem() method and up the list once with the addItem() method.
+
+2.  
+
+public static LLList reverse(LLList list)
+{
+	LLList rev = new LLList();
+
+	ListIterator iter = list.iterator();
+
+	while(iter.hasNext())
+	{	
+		for(int i = list.length-1; i>=0; i--)
+		{
+			rev.addItem(i);
+		}
+
+		list = list.next;
+	}
+
+	return rev;
+}  
+
+3.  The worst case of the improved algorithm is O(n^2) because the iterator reduces the number of iterations by iterating the list within the class.  This is done within the private class LLListIterator and instantiated in the public static method as a ListIterator named iter.  This internal class is returned with the public method iterator();  A second iteration of the list must be done in reverse order so that we can fill the list rev starting at index list.length-1 and ending at index 0.	  
+
+
+Problem 4:  Using a queue to search a stack
+
+	public static void main(String[] args)
+	{
+
+		boolean match = false;
+		Stack<T> s = new Stack<T>();
+		Stack<T> temp = new Stack<T>();
+		List<T> l = new List<T>();
+		int i = value we are searching for inside stack;
+
+		-Push values to s
+
+	}
+
+	public static boolean search(int i, Stack<T> s, List<T> l, Stack<T> temp, boolean match)
+	{
+		while(!s.isEmpty())
+		{	
+			l.insert(s.pop());
+		}
+
+		while(!l.isEmpty())
+		{
+			temp.push(l.remove());
+		}
+
+		while(!temp.isEmpty())
+		{
+			if(temp.peek().equals(j)) match = true;
+			s.push(temp.pop());
+		}
+
+		return match;
+	}
+
+}
+
+
+
+

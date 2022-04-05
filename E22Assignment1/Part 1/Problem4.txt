@@ -1,0 +1,35 @@
+// @author Nicholas Grokhowsky, nickgrok@gmail.com
+// CSCI E-22, Harvard University
+// Fall 2018
+
+import java.util.*;
+
+class Problem4
+{
+	public static void main (String [] args)
+	{
+		Object [] arr = {"there?", "out", "anybody", "there", "Is", "World", "Hello"};
+		
+		// i equals the index in the array where the recursion stops
+		int i = 0; 
+
+		printReverse(arr, i);
+
+	}
+
+	public static void printReverse(Object[] arr, int i)
+	{
+		if(i == arr.length-1)
+		{
+			System.out.println(arr[arr.length-1]);
+		}
+
+		else
+		{
+			printReverse(arr, i+1);	
+			System.out.println(arr[i]);
+		}
+
+	}
+
+}

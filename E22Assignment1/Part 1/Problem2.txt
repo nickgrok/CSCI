@@ -1,0 +1,61 @@
+@author Nicholas Grokhowsky, nickgrok@gmail.com
+CSCI E-22, Harvard University
+Fall 2018
+
+Problem 2: Array Practice
+
+1) 
+
+public static void swapPairs(int [] arr) throws IllegalArgumentException
+{
+	int place;
+
+	for(int i = 0; i < arr.length; i++)
+	{	
+		if(i < arr.length-1)
+		{
+			place = arr[i];
+			arr[i] = arr[i+1];
+			arr[i+1] = place;
+			i++;
+		}
+	}	
+}
+
+
+2)
+
+public static int longestSorted(int [] arr) 
+{
+	int counter = 0;
+
+	if(arr == null)
+	{
+		throw new IllegalArgumentException();
+	}
+
+	if(arr.length == 0)
+	{
+		return 0;
+	}
+
+	else if(arr.length == 1)
+	{
+		return 1;
+	}
+
+	else
+	{
+		for(int i = 0; i < arr.length-1; i++)
+		{
+
+			if(arr[i] >= arr[i+1])
+			{
+				counter++;
+			}
+
+		}
+	}
+
+	return counter;
+}

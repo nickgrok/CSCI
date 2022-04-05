@@ -1,0 +1,181 @@
+@author Nicholas Grokhowsky, nickgrok@gmail.com
+CSCI E-22, Harvard University
+Fall 2018
+
+
+Problem 1: Sorting Practice - {10, 18, 4, 24, 33, 40, 8, 3, 12}
+
+
+
+1) {3, 4, 18, 24, 33, 40, 8, 10, 12}
+
+2) {4, 10, 18, 24, 33, 40, 8, 3, 12}
+
+3) {8, 3, 4, 10, 18, 12, 24, 33, 40} and the increment is now set to 1 -> the next phase is regular insertion sort
+
+4) {4, 10, 18, 8, 3, 12, 24, 33, 40}
+
+5) {10, 18, 4, 24, 33, 12, 8, 3, 40}
+
+6) {10, 40, 12, 33, 3, 4, 24, 18, 8}
+
+7) {4, 10, 18, 24, 33, 40, 8, 3, 12}
+
+
+
+Problem 2: Counting Comparisons
+
+1) Insertion Sort:  4 comparisons would be made.  The algorithm iterates the array starting at index 1 and ends at the last index (in this case 4).
+					Each index value is compared to the pevious index value.  If there was a value out of order more coparisons would be made, but because the array was sorted only n-1 comparisons are made.  
+
+2) Bubble Sort:  	10 comparisons would be made because each value in the array is checked twice.  The reason each value is checked twice is because 						the algorithm uses two loops, on nested within another, and the inner loop is dependant on the outter loop.  The efficiency is less 					than the O(n^2) which is bubble sort's comparison efficiency, but that is because we are only sorting with n = 5.     
+
+3) Quicksort:  		16 comparisons would be made because n+1 comparisons are made per recursive call.  There are a total of n-1 recursive calls made 						where n = 5, n = 3, n = 2, and n = 2.  This means there are (5+1) + (3+1) + (2+1) + (2+1) comparisons.  This totals to 16. 
+
+
+Problem 3: Comparing two algorithms
+
+Algorithm A Worst Case:		The worst case time efficiency of this algorithm is quadratic, or O(n^2), because the array is iterated with 							 				a second nested loop that relies on the first loop to iterate.  
+
+Alogrithm B Worst Case:		The worst case time efficiency of this algoritm is linear, or O(n), because the array is iterated just one 												time, and all comparisons are able to be done within this single iteration.  This is possible because the 												array was sorted before duplicates are looked for.  
+
+
+Problem 4: Sum generator
+
+1)	number of times sum increases = n;  Although the efficiency is of comparisons and moves is O(n^2), the statement is only called inside one of the iterative loops which makes the number of times the sum is incremented linear, or equal to n.
+
+2)	The time efficiency is quatradic, or O(n^2), because the number of values summed rely on a nested loop which itself relies on the values of the loop it is nested within.     
+
+3) 	My alternative function:
+
+	public static void generateSumsTwo(int n)
+	{
+		int sum = 0;
+
+		if(n < 1)
+		{
+			return;
+		}
+		
+		for(int i=1; i<=n; i++)
+		{
+			sum += i;
+			System.out.println(sum);
+		}
+	}
+
+4) 	My alternative function is linear, or O(n), because it only iterates through the group of values one time.  Hence, the number of
+	moves and/or number of comparisons are equal to the size of the data set.
+
+
+Problem 5: Stable and unstable sorting
+
+String stableArr = { Gray D., Quixote D., Finn H., Montoya I., Gatsby J., Holmes S., Heep U., Frankenstein V. };
+
+This string is sorted by first name and the select sort method below will sort the last names.
+
+
+for(int i=0; i<stableArr.length; i++)
+{
+	char minimum = stableArr[i].charAt(stableArr[i].length());
+	// char minumum = 'G' as the first minimum value
+
+	for(int j=i+1; j<stableArr.length; j++)
+	{
+		// Breakdown of the 8 elements in the array:
+
+		#############################NEW ITERATION#####################################
+
+		if(Q < G) ->returns false
+		if(F < G) ->returns true
+		NEW ARRAY { Finn H., Quixote D., Gray D., Montoya I., Gatsby J., Holmes S., Heep U., Frankenstein V. }
+		if(M < F) ->returns false
+		if(G < F) ->returns false
+		if(H < F) ->returns false
+		if(H < F) ->returns false
+		if(F < F) ->returns false
+
+		#############################NEW ITERATION#####################################
+
+		if(G < Q) ->returns true
+		NEW ARRAY { Finn H., Gray D., Quixote D., Montoya I., Gatsby J., Holmes S., Heep U., Frankenstein V. }
+		if(M < G) ->returns false
+		if(G < G) ->returns false
+		if(H < G) ->returns false
+		if(H < G) ->returns false
+		if(F < G) ->returns true
+		NEW ARRAY { Finn H., Frankenstein V., Quixote D., Montoya I., Gatsby J., Holmes S., Heep U., Gray D. }
+
+		#############################NEW ITERATION#####################################
+
+		if(M < Q) ->returns true
+		NEW ARRAY { Finn H., Frankenstein V., Montoya I., Quixote D., Gatsby J., Holmes S., Heep U., Gray D. }
+		if(G < M) ->returns true
+		NEW ARRAY { Finn H., Frankenstein V., Gatsby J., Quixote D., Montoya I., Holmes S., Heep U., Gray D. }
+		if(H < G) ->returns false
+		if(H < G) ->returns false
+		if(G < G) ->returns false
+
+		#############################NEW ITERATION#####################################
+
+		if(M < Q) ->returns true
+		NEW ARRAY { Finn H., Frankenstein V., Gatsby J., Montoya I., Quixote D., Holmes S., Heep U., Gray D. }
+		if(H < M) ->returns true
+		NEW ARRAY { Finn H., Frankenstein V., Gatsby J., Holmes S., Quixote D., Montoya I., Heep U., Gray D. }
+		if(H < H) ->returns false
+		if(G < H) ->returns true
+		NEW ARRAY { Finn H., Frankenstein V., Gatsby J., Gray D., Quixote D., Montoya I., Heep U., Holmes S. }  
+		
+		**** this is where the initial sort begins to go out of order ****
+
+		if(H < G) ->returns false
+
+		#############################NEW ITERATION#####################################
+
+		if(M < Q) ->returns true
+		NEW ARRAY { Finn H., Frankenstein V., Gatsby J., Gray D., Montoya I., Quixote D., Heep U., Holmes S. }	
+		if(H < M) ->returns true
+		NEW ARRAY { Finn H., Frankenstein V., Gatsby J., Gray D., Heep U., Montoya I., Quixote D., Holmes S. }
+		if(H < H) returns false
+
+		#############################NEW ITERATION#####################################
+
+		if(Q < M) ->returns false
+		if(H < M) ->returns true
+		NEW ARRAY { Finn H., Frankenstein V., Gatsby J., Gray D., Heep U., Holmes S., Quixote D., Montoya I. }
+
+		**** again the initial array is out of order ****
+
+		#############################NEW ITERATION#####################################
+
+		if(M < Q) returns true
+		NEW ARRAY { Finn H., Frankenstein V., Gatsby J., Gray D., Heep U., Holmes S., Montoya I., Quixote D. }
+
+	}	
+
+}
+
+Final sorted array:  { Finn H., Frankenstein V., Gatsby J. (now first name initial out of order), Gray D. (now first name intial out of order), Heep U. (now first name initial out of order), Holmes S (now first name initial out of order)., Montoya I., Quixote D. }
+
+
+Problem 6: Practice with references
+
+1)
+
+Expression			Address		 Value									
+------------------ ------------- -----------
+n 					Ox100			Ox712
+n.ch 				Ox712			'n'
+n.prev 				Ox718			Ox064
+n.prev.prev 		Ox070			Ox360
+n.prev.next.next 	Ox714			null			
+n.prev.prev.next 	Ox362			Ox064
+
+2)
+
+n.prev.next = x;
+x.prev = n.prev;
+x.next = n;
+n.prev = x;
+
+

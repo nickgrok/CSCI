@@ -1,0 +1,287 @@
+// @author Nicholas Grokhowsky, nickgrok@gmail.com
+// CSCI E-22, Harvard University
+// Fall 2018
+
+Problem 9 - Part 2:
+
+###########
+EXPREIMENTS
+###########
+
+##########################################################################
+10 Iterations of 50,000 random values:
+
+BubbleSort  -> Avg Comparisons:    1249975000        Avg Moves: 1868324541
+BubbleSort2 -> Avg Comparisons:    1249562252        Avg Moves: 1868324541
+BubbleSort3 -> Avg Comparisons:    2481750364        Avg Moves: 1868324541
+##########################################################################
+
+##########################################################################
+10 Iterations of 50,000 almost sorted values:
+
+BubbleSort  -> Avg Comparisons:    1249975000        Avg Moves: 65292
+BubbleSort2 -> Avg Comparisons:    737197        	 Avg Moves: 65292
+BubbleSort3 -> Avg Comparisons:    749985        	 Avg Moves: 65292
+##########################################################################
+
+##########################################################################
+10 Iterations of 50,000 fully sorted values:
+
+BubbleSort  -> Avg Comparisons:    1249975000        Avg Moves: 0
+BubbleSort2 -> Avg Comparisons:    49999        	 Avg Moves: 0
+BubbleSort3 -> Avg Comparisons:    49999        	 Avg Moves: 0
+##########################################################################
+
+##########################################################################
+10 Iterations of 16,000 random sorted values:
+
+BubbleSort  -> Avg Comparisons:    127992000        Avg Moves: 193080780
+BubbleSort2 -> Avg Comparisons:    127959970        Avg Moves: 193080780
+BubbleSort3 -> Avg Comparisons:    252560214        Avg Moves: 193080780
+##########################################################################
+
+##########################################################################
+10 Iterations of 16,000 almost sorted values:
+
+BubbleSort  -> Avg Comparisons:    127992000        Avg Moves: 22413
+BubbleSort2 -> Avg Comparisons:    174016           Avg Moves: 22413
+BubbleSort3 -> Avg Comparisons:    175989           Avg Moves: 22413
+##########################################################################
+
+##########################################################################
+10 Iterations of 16,000 fully sorted values:
+
+BubbleSort  -> Avg Comparisons:    127992000        Avg Moves: 0
+BubbleSort2 -> Avg Comparisons:    15999            Avg Moves: 0
+BubbleSort3 -> Avg Comparisons:    15999            Avg Moves: 0
+##########################################################################
+
+##########################################################################
+10 Iterations of 8,000 random sorted values:
+
+BubbleSort  -> Avg Comparisons:    31996000        Avg Moves: 48620739
+BubbleSort2 -> Avg Comparisons:    31981762        Avg Moves: 48620739
+BubbleSort3 -> Avg Comparisons:    63336082        Avg Moves: 48620739
+##########################################################################
+
+##########################################################################
+10 Iterations of 8,000 almost sorted values:
+
+BubbleSort  -> Avg Comparisons:    31996000        Avg Moves: 11166
+BubbleSort2 -> Avg Comparisons:    81947           Avg Moves: 11166
+BubbleSort3 -> Avg Comparisons:    87989           Avg Moves: 11166
+##########################################################################
+
+##########################################################################
+10 Iterations of 8,000 fully sorted values:
+
+BubbleSort  -> Avg Comparisons:    31996000        Avg Moves: 0
+BubbleSort2 -> Avg Comparisons:    7999            Avg Moves: 0
+BubbleSort3 -> Avg Comparisons:    7999            Avg Moves: 0
+##########################################################################
+
+##########################################################################
+10 Iterations of 4000 randomly sorted values:
+
+BubbleSort  -> Avg Comparisons:    7998000         Avg Moves: 11876568
+BubbleSort2 -> Avg Comparisons:    7971819         Avg Moves: 11876568
+BubbleSort3 -> Avg Comparisons:    15256185        Avg Moves: 11876568
+##########################################################################
+
+##########################################################################
+10 Iterations of 4000 almost sorted values:
+
+BubbleSort  -> Avg Comparisons:    7998000        Avg Moves: 5856
+BubbleSort2 -> Avg Comparisons:    36514          Avg Moves: 5856
+BubbleSort3 -> Avg Comparisons:    43989          Avg Moves: 5856
+##########################################################################
+
+##########################################################################
+10 Iterations of 4000 fully sorted values:
+
+BubbleSort  -> Avg Comparisons:    7998000        Avg Moves: 0
+BubbleSort2 -> Avg Comparisons:    3999           Avg Moves: 0
+BubbleSort3 -> Avg Comparisons:    3999           Avg Moves: 0
+##########################################################################
+
+##########################################################################
+10 Iterations of 2000 randomly sorted values:
+
+BubbleSort  -> Avg Comparisons:    1999000        Avg Moves: 3015636
+BubbleSort2 -> Avg Comparisons:    1987355        Avg Moves: 3015636
+BubbleSort3 -> Avg Comparisons:    3778110        Avg Moves: 3015636
+##########################################################################
+
+##########################################################################
+10 Iterations of 2000 almost sorted values:
+
+BubbleSort  -> Avg Comparisons:    1999000        Avg Moves: 3153
+BubbleSort2 -> Avg Comparisons:    19301          Avg Moves: 3153
+BubbleSort3 -> Avg Comparisons:    19990          Avg Moves: 3153
+##########################################################################
+
+##########################################################################
+10 Iterations of 2000 almost sorted values:
+
+BubbleSort  -> Avg Comparisons:    1999000        Avg Moves: 0
+BubbleSort2 -> Avg Comparisons:    1999           Avg Moves: 0
+BubbleSort3 -> Avg Comparisons:    1999           Avg Moves: 0
+##########################################################################
+
+##########################################################################
+10 Iterations of 1000 randomly sorted values:
+
+BubbleSort  -> Avg Comparisons:    499500        Avg Moves: 738627
+BubbleSort2 -> Avg Comparisons:    496103        Avg Moves: 738627
+BubbleSort3 -> Avg Comparisons:    979020        Avg Moves: 738627
+##########################################################################
+
+##########################################################################
+10 Iterations of 1000 almost sorted values:
+
+BubbleSort  -> Avg Comparisons:    499500        Avg Moves: 1515
+BubbleSort2 -> Avg Comparisons:    7280          Avg Moves: 1515
+BubbleSort3 -> Avg Comparisons:    7992          Avg Moves: 1515
+##########################################################################
+
+##########################################################################
+10 Iterations of 1000 fully sorted values:
+
+BubbleSort  -> Avg Comparisons:    499500        Avg Moves: 0
+BubbleSort2 -> Avg Comparisons:    999           Avg Moves: 0
+BubbleSort3 -> Avg Comparisons:    999           Avg Moves: 0
+##########################################################################
+
+##########################################################################
+10 Iterations of 500 randomly sorted values:
+
+BubbleSort  -> Avg Comparisons:    124750        Avg Moves: 189315
+BubbleSort2 -> Avg Comparisons:    123699        Avg Moves: 189315
+BubbleSort3 -> Avg Comparisons:    243013        Avg Moves: 189315
+##########################################################################
+
+##########################################################################
+10 Iterations of 500 almost sorted values:
+
+BubbleSort  -> Avg Comparisons:    124750        Avg Moves: 735
+BubbleSort2 -> Avg Comparisons:    3375          Avg Moves: 735
+BubbleSort3 -> Avg Comparisons:    3992          Avg Moves: 735
+##########################################################################
+
+##########################################################################
+10 Iterations of 500 fully sorted values:
+
+BubbleSort  -> Avg Comparisons:    124750        Avg Moves: 0
+BubbleSort2 -> Avg Comparisons:    499           Avg Moves: 0
+BubbleSort3 -> Avg Comparisons:    499           Avg Moves: 0
+##########################################################################
+
+##########################################################################
+10 Iterations of 10 random values:
+
+BubbleSort  -> Avg Comparisons:    45        Avg Moves: 90
+BubbleSort2 -> Avg Comparisons:    45        Avg Moves: 90
+BubbleSort3 -> Avg Comparisons:    81        Avg Moves: 90
+##########################################################################
+
+##########################################################################
+10 Iterations of 10 almost sorted values:
+
+BubbleSort  -> Avg Comparisons:    45        Avg Moves: 3
+BubbleSort2 -> Avg Comparisons:    9         Avg Moves: 3
+BubbleSort3 -> Avg Comparisons:    18        Avg Moves: 3
+##########################################################################
+
+##########################################################################
+10 Iterations of 10 full sorted values:
+
+BubbleSort  -> Avg Comparisons:    45        Avg Moves: 0
+BubbleSort2 -> Avg Comparisons:    9         Avg Moves: 0
+BubbleSort3 -> Avg Comparisons:    9         Avg Moves: 0
+##########################################################################
+
+Efficiency of Comparisons:
+
+
+
+
+
+
+########################################################################################################################
+n = 500:
+########################################################################################################################
+
+log(n) = 8.9658
+n = 500:
+n log n = 4,482.85 
+n^2 = 250,000
+
+
+###########
+BubbleSort
+###########
+
+1. Random Sorted: 	O(n^2)
+2. Almost Sorted: 	O(n^2)
+3. Fully Sorted: 	O(n^2)
+
+###########
+BubbleSort2
+###########
+
+1. Random Sorted: 	O(n^2)
+2. Almost Sorted: 	O(n log n)
+3. Fully Sorted: 	O(n)
+
+###########
+BubbleSort3
+###########
+
+1. Random Sorted: 	O(n^2)     	-> two times as many comparisons as the other two methods
+2. Almost Sorted: 	O(n log n)
+3. Fully Sorted: 	O(n)
+
+########################################################################################################################
+n = 1,000
+########################################################################################################################
+
+log(n) = 9.9658
+n = 1,000:
+n log n = 9,965.8 
+n^2 = 1,000,000
+
+
+###########
+BubbleSort
+###########
+
+1. Random Sorted: 	O(n^2)
+2. Almost Sorted: 	O(n^2)
+3. Fully Sorted: 	O(n^2)
+
+###########
+BubbleSort2
+###########
+
+1. Random Sorted: 	O(n^2)
+2. Almost Sorted: 	O(n log n)
+3. Fully Sorted: 	O(n)
+
+###########
+BubbleSort3
+###########
+
+1. Random Sorted: 	O(n^2)     	-> two times as many comparisons as the other two methods
+2. Almost Sorted: 	O(n log n)
+3. Fully Sorted: 	O(n)
+
+
+* The same pattern of efficiency is shown for each experiment above.
+
+The conclusion to these experiments is that the BubbleSort() method given to us performs comparisons with quadratic efficiency, or O(n^2), regardless of whether the array is fully sorted, almost sorted, or random.  The BubbleSort2() method is the most efficient of the three, and it performs comparisons with quadratic efficiency in the worst case (random aray), nlogn time in the average case (almost sorted), and linear time in the best case (fully sorted).  Lastly, the third algorithm, BubbleSort3(), and my initial attempt at solving this problem, is more efficient than the original algorithm, BubbleSort(), when looking strictly at big-O efficiency because in the best case (fully sorted) array it performs at O(n), the average case(almost sorted) it performs at O(n log n), and in the worst case it performs at O(n^2).  
+
+However, in the worst case there is a difference between BubbleSort3() and the original method given.  Although it is technically within quadratic efficiency, it is consistantly close to the maximum number of comparisons for a quadratic function, and close to double the comparisons of the other two methods.  Yet, the BubbleSort3() method is more efficient than the original for fully sorted and almost sorted arrays, and, although it appears less efficient in my trials, it more than likely is as efficient as the original method when n gets much larger.  This is because as n gets larger the original algorithm will make comparisons closer to the top value within its quadratic confines.  It just happens that BubbleSort3() is always making comparisons at that top range.
+
+To clarify the reason why BubbleSort() and BubbleSort2() fell in between O(n log n) and O(n^2) on random arrays, it is because the value of n was not large enough for the algorithm to have to make as many comparisons as the maximum the algorithm is able to make.  The maximum is O(n^2), and an example of an algorithm reaching this maximum is BubbleSort3() when sorting random arrays. 
+
+If I were to continue this experiment further I would be interested in looking into what value of n where BubbleSort() and BubbleSort3() become as efficient as each other at sorting random arrays.      

@@ -1,0 +1,105 @@
+Nicholas Grokhowsky
+nickgrok@gmail.com
+Harvard University
+CSCI E-22
+Fall 2018
+
+
+
+Problem 1: Uniform state-space search
+
+1.	a b i c d j 
+2.	a b c e d f
+3.	a a b i a b i c 
+
+
+
+Problem 2: Counting keys below a threshold
+
+1.  
+BEST CASE:  In the best case the depth equals 0 and the efficiency is constant, or O(1).
+
+WORST CASE: 
+
+Balanced:  For a balanced binary tree the worst case efficiency is linear, or O(n), because the algorithm checks each Node.
+
+Unbalanced: For an unbalanced binary tree the worst case efficinecy is linear, or O(n), because the algorithm checks each Node.  Also, for the worst case this is the circumstance where the binary tree becomes a linked list. 
+
+2.		
+
+    private static int numSmallerInTree(Node root, int t)
+    {
+        int count = 0;
+
+        if(root == null)
+        {
+            return 0;
+        }    
+
+        else if(root.key < t)
+        {
+            count += numSmallerInTree(root.left, t);
+            count += numSmallerInTree(root.right, t);
+            return 1 + count;
+        }
+        
+        else        
+        {
+            count += numSmallerInTree(root.left, t);
+            count += numSmallerInTree(root.right, t);
+            return count;
+        }       
+         
+    }
+
+
+   3.  	
+BEST CASE:  In the best case the depth equals 0 and the efficiency is constant, or O(1).
+
+WORST CASE: 
+
+Balanced:  For a balanced binary tree the worst case efficiency is O(log n) because this alorithm only makes a recursive call for one of the two Node pointers for each root Node.  
+
+Unbalanced: For an unbalanced binary tree the worst case efficinecy is linear, or O(n), because n = height. This is the circumstance where the binary tree becomes a linked list. 
+
+
+
+Problem 3:  Tree traversal puzzles  
+
+1.	
+
+	Post order:		ENIMOPTFRW
+	In order:		IENWOMRPFT
+
+	See included file Problem3_1.jpg
+
+
+2.
+
+	Pre order:		TRMESBONVY
+	Post order:		ESMRVYNOBT
+
+	See included file Problem3_2.jpg
+
+
+Problem 4:  Huffman encoding
+
+1.	See included file Problem4_1.jpg
+
+2.	focal = 0111 0110 00 1 010
+
+
+Problem 5: Binary search trees
+
+1.	37 26 13 35 30 42 56 47 70
+2.	13 30 35 26 47 70 56 42 37
+3.	See included file Problem5_3.jpg
+4.	See included file Problem5_4.jpg
+5.	This is an example of a balanced tree because the differene of the root tree and each sub-tree does not differ by more than 1.  The whole tree has a height of 3 from root 37.  The two following sub-tree has have a height of 2 at roots 26 and 42.  The last two levels of the tree are either leaf nodes or roots with a height of 1.  At no point does the height extend more than 1 level from the previous.
+
+
+Problem 6: 2-3 Trees and B-trees
+
+1.	See included file Problem6_1.jpg
+2.	See included file Problem6_2.jpg
+
