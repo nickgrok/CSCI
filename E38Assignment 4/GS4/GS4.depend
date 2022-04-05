@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1532385937 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 4/GS4/jotto.cpp
+	<iostream>
+	<iomanip>
+	<ctime>
+	<cstdlib>
+	<array>
+	<string>
+	<cstring>
+	"gs4.h"
+
+1532387305 /home/nick/Documents/CSCI E-38/Assignments/Assignment 4/GS4/gs4.h
+
+1532385959 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 4/GS4/main.cpp
+	<iostream>
+	<iomanip>
+	<ctime>
+	<cstdlib>
+	<array>
+	<string>
+	"gs4.h"
+
+1532387294 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 4/GS4/jotto2.cpp
+	<iostream>
+	<iomanip>
+	<ctime>
+	<cstdlib>
+	<array>
+	<string>
+	<cstring>
+	"gs4.h"
+

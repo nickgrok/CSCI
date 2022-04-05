@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1531708344 source:/home/nick/Documents/CSCI E-38/Assignments/GP3/GP3/main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	"gp3.h"
+
+1531714581 source:/home/nick/Documents/CSCI E-38/Assignments/GP3/GP3/gp3.cpp
+	<iostream>
+	<iomanip>
+	<vector>
+	<string>
+	<ctime>
+	<cstdlib>
+	"gp3.h"
+
+1531713595 /home/nick/Documents/CSCI E-38/Assignments/GP3/GP3/gp3.h
+
+1531708344 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 3/GP3/GP3/main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	"gp3.h"
+
+1531713595 /home/nick/Documents/CSCI E-38/Assignments/Assignment 3/GP3/GP3/gp3.h
+

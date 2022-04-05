@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1533236794 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 5/GP5/main.cpp
+	<iostream>
+	<iomanip>
+	<ctime>
+	<cstdlib>
+	<time.h>
+	<sstream>
+	<fstream>
+	<string>
+	<array>
+	<vector>
+	<cmath>
+	"gp5.h"
+
+1533444089 /home/nick/Documents/CSCI E-38/Assignments/Assignment 5/GP5/gp5.h
+
+1533443833 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 5/GP5/Room.cpp
+	<iostream>
+	<iomanip>
+	<ctime>
+	<cstdlib>
+	<time.h>
+	<sstream>
+	<fstream>
+	<string>
+	<array>
+	<vector>
+	<cmath>
+	"gp5.h"
+

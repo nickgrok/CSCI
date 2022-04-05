@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1532351381 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 4/PS4/main.cpp
+	<iostream>
+	"ps4.h"
+
+1532351390 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 4/PS4/problem1.cpp
+	<iostream>
+	<iomanip>
+	<climits>
+	<array>
+	<string>
+	<cstring>
+	<string.h>
+	"ps4.h"
+
+1532311721 /home/nick/Documents/CSCI E-38/Assignments/Assignment 4/PS4/ps4.h
+
+1532351397 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 4/PS4/problem2.cpp
+	<iostream>
+	<iomanip>
+	<climits>
+	<array>
+	<string>
+	<cstring>
+	<string.h>
+	"ps4.h"
+
+1532351404 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 4/PS4/problem3.cpp
+	<iostream>
+	<iomanip>
+	<climits>
+	<array>
+	<string>
+	<cstring>
+	<string.h>
+	"ps4.h"
+
+1532702785 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 4/PS4/problem4.cpp
+	<iostream>
+	<iomanip>
+	<climits>
+	<array>
+	<string>
+	<cstring>
+	<string.h>
+	"ps4.h"
+

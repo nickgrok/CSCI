@@ -1,0 +1,147 @@
+# depslib dependency file v1.0
+1531674356 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 3/problem1.cpp
+	<iostream>
+	<string>
+	<cmath>
+	<cstdlib>
+	"ps3.h"
+
+1531682265 /home/nick/Documents/CSCI E-38/Assignments/Assignment 3/ps3.h
+
+1531435767 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 3/PS3.cpp
+	<iostream>
+	<string>
+	<cmath>
+	<cstdlib>
+
+1531672956 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 3/main.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	<cmath>
+	<cstdlib>
+	"ps3.h"
+
+1531674116 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 3/problem2.cpp
+	<iostream>
+	<string>
+	<cmath>
+	<cstdlib>
+	<vector>
+	"ps3.h"
+
+1531676039 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 3/problem3.cpp
+	<iostream>
+	<iomanip>
+	<sstream>
+	<string>
+	<cmath>
+	<cstdlib>
+	<vector>
+	"ps3.h"
+
+1531677022 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 3/problem4.cpp
+	<iostream>
+	<iomanip>
+	<sstream>
+	<string>
+	<cmath>
+	<cstdlib>
+	<vector>
+	"ps3.h"
+
+1531672956 source:/home/nick/Documents/CSCI E-38/Assignments/PS3/PS3/Assignment 3/main.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	<cmath>
+	<cstdlib>
+	"ps3.h"
+
+1531682265 /home/nick/Documents/CSCI E-38/Assignments/PS3/PS3/Assignment 3/ps3.h
+
+1531674356 source:/home/nick/Documents/CSCI E-38/Assignments/PS3/PS3/Assignment 3/problem1.cpp
+	<iostream>
+	<string>
+	<cmath>
+	<cstdlib>
+	"ps3.h"
+
+1531674116 source:/home/nick/Documents/CSCI E-38/Assignments/PS3/PS3/Assignment 3/problem2.cpp
+	<iostream>
+	<string>
+	<cmath>
+	<cstdlib>
+	<vector>
+	"ps3.h"
+
+1531676039 source:/home/nick/Documents/CSCI E-38/Assignments/PS3/PS3/Assignment 3/problem3.cpp
+	<iostream>
+	<iomanip>
+	<sstream>
+	<string>
+	<cmath>
+	<cstdlib>
+	<vector>
+	"ps3.h"
+
+1531683865 source:/home/nick/Documents/CSCI E-38/Assignments/PS3/PS3/Assignment 3/problem4.cpp
+	<iostream>
+	<iomanip>
+	<sstream>
+	<string>
+	<cmath>
+	<cstdlib>
+	<vector>
+	"ps3.h"
+
+1531699089 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 3/PS3/PS3/main.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	<cmath>
+	<ctime>
+	<cstdlib>
+	"ps3.h"
+
+1531949768 /home/nick/Documents/CSCI E-38/Assignments/Assignment 3/PS3/PS3/ps3.h
+
+1531699111 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 3/PS3/PS3/problem2.cpp
+	<iostream>
+	<string>
+	<cmath>
+	<cstdlib>
+	<ctime>
+	<vector>
+	"ps3.h"
+
+1531699122 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 3/PS3/PS3/problem3.cpp
+	<iostream>
+	<iomanip>
+	<sstream>
+	<string>
+	<cmath>
+	<cstdlib>
+	<ctime>
+	<vector>
+	"ps3.h"
+
+1531949840 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 3/PS3/PS3/problem4.cpp
+	<iostream>
+	<iomanip>
+	<sstream>
+	<string>
+	<cmath>
+	<cstdlib>
+	<ctime>
+	<vector>
+	"ps3.h"
+
+1531948309 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 3/PS3/PS3/problem1.cpp
+	<iostream>
+	<string>
+	<cmath>
+	<cstdlib>
+	<ctime>
+	"ps3.h"
+

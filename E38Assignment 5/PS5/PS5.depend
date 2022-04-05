@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1532836974 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 5/PS5/main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	<sstream>
+	<fstream>
+	<string>
+	<array>
+	<vector>
+	"ps5.h"
+
+1532893758 /home/nick/Documents/CSCI E-38/Assignments/Assignment 5/PS5/ps5.h
+
+1532836959 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 5/PS5/Money.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	<sstream>
+	<fstream>
+	<string>
+	<array>
+	<vector>
+	"ps5.h"
+
+1532836969 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 5/PS5/problem1.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	<sstream>
+	<fstream>
+	<string>
+	<array>
+	<vector>
+	"ps5.h"
+
+1532836946 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 5/PS5/problem2.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	<sstream>
+	<fstream>
+	<string>
+	<array>
+	<vector>
+	"ps5.h"
+
+1532802066 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 5/PS5/problem3a.cpp
+	<iostream>
+	<sstream>
+	<fstream>
+	<string>
+	"ps5.h"
+
+1532895917 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 5/PS5/problem3.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	<sstream>
+	<fstream>
+	<string>
+	<array>
+	<vector>
+	"ps5.h"
+
+1532838748 source:/home/nick/Documents/CSCI E-38/Assignments/Assignment 5/PS5/ProbThreeC.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+	<sstream>
+	<fstream>
+	<string>
+	<array>
+	<vector>
+	"ps5.h"
+

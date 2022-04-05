@@ -1,0 +1,151 @@
+The Grand Foyer is a magnificant entryway to this dilapidated, manor home.
+A shrill voice whispers, "Get out."
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+The Cloak Room is completely covered in spider webs. A scuttering noise
+approaches you.
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+The Study is dark and dingy.  There is a large, dark wood desk with a worn
+leather chair positioned behind it.
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+The Library is piled with mildewed books.  The only way out is through a dark
+tunnel made by the book piles.  The sound of finger nails scratches at the
+walls.
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+An old phonograph is repetitively playing scratchy swing music in
+the Conservatory.  The air becomes frigid cold and you feel something
+is watching you.
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+The Billiard Room is smokey.  There are cigars burning is ash trays and
+half finished drinks scattered throught the room.  You hear muffled
+whispering.
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+The Drawing Room is neatly kept and nicely appointed.  You almost think this is
+a liveable room, but then the lights flicker, and there is a shrill laugh in the
+air.
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+Old food is left out and rotted on the counters and in the sinks in the Kitchen.
+It smells rancid and the floors are slippery.
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+Rusty cans and broken jars are scattered throughout the Pantry
+A large wooden box in the corner begins to violently shake and
+something begins to scream from inside.
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+You end up in the dank and dark Wine Cellar.  It is completely dark and
+icey cold.
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+The Root Cellar is a completely empty stone room with
+shelves made of rotting wood.
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+You get to the Stables from the side door.  You are almost
+out.  Hurry up because someone is inside the stables with you!
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+The Garden Shed is a dilapidated wooden building.  It is hard
+to make out the objects inside, but it looks like axes and
+machetes are dangling above you.
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+The smell of burned gunpowder lingers in the Armory
+You almost slip on spent gun casings. You need to move!
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+The Bedroom is neatly arranged with a properly made bed
+in the middle of the room.  There is an imprint of a person
+laying on the bed.
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
+The Private Chamber is in the attic, and it is a huge mess
+There are blueprints of the house spread out on the desk.
+
+1] Left
+2] Right
+3] Forward
+4] Backward
+5] Panic!
+#
