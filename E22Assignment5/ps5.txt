@@ -1,0 +1,149 @@
+Nicholas Grokhowsky
+nickgrok@gmail.com
+CSCI E-22, Harvard University
+#############################
+
+1.	Heaps and heapsort	
+
+	a) See prob_1_1.pdf
+	b) See prob_1_2.pdf
+	c) See prob_1_3.pdf
+
+2.	Hash Tables
+
+	a) See prob2_1.pdf
+	b) See prob2_2.pdf
+	c) See prob2_3.pdf
+
+3.	Informed state-space search
+
+	a) See prob3_1.pdf
+	b) See prob3_2.pdf
+
+4.	Determineing if an array is a heap
+
+	a)
+		private static boolean isHeapTree(int[] arr, int i)
+		{
+			boolean output = false;
+			int parent = i;
+			int leftChild = 2 * parent + 1;
+			int rightChild = 2 * parent + 2;
+
+			if((parent >= arr.length) || (leftChild >= arr.length) || (rightChild >= arr.length))
+			{
+				return false;
+			}
+
+			else if((arr[leftChild] > arr[parent]) || (arr[rightChild] > arr[parent]))
+			{
+				return false;
+			}
+
+			else
+			{
+				output = true;
+			}
+			
+			isHeapTree(arr, i+1);
+
+			return output;
+		}
+
+	b)
+		In both the best and worst case circumstance the efficiency of this algorithm will be O(n) because each node must be visited in order to determine if it is larger than its parent node.  However, in the best case circumstance one of the children nodes of the root will be larger than the parent, and the remainder of the array will not be traversed.  In the worst case scenario the array will be a heap, and the entire tree will be traversed.  Again, both scenarios are O(n).
+
+5.	Graph traversal	
+
+	a) Breadth first traversal - LA -> Denver -> Seattle -> St. Louis -> Atlanta -> Washington -> New York -> Boston
+	b) LA -> St. Louis -> New York
+	c) Depth first traversal - LA -> Denver -> St. Louis -> Atlanta -> Washington -> New York -> Boston -> Seattle
+	d) LA -> Denver -> St. Louis -> Atlanta -> Washington -> New York
+
+6.	(LA, Denver) -> (Denver, St.Louis) -> (St.Louis, Atlanta) -> (Atlanta, Washington) -> (Washington, NY) -> (NY, Boston) -> (LA, Seattle) 
+
+7.	
+	a)	See prob7_1.pdf
+	b) 	Shortest path:	LA -> Denver -> St. Louis -> Boston 	
+
+		LA Vertex (X is a temporary route not taken):
+
+		LA -> Seattle -> Denver  X
+		LA -> Denver
+		LA -> St. Lous -> Denver X 
+
+		Denver Vertex:
+
+		Denver -> St. Louis
+		Denver -> LA -> St. Louis X
+
+		St. Louis Vertex:
+
+		St. Louis -> New York -> Boston X
+		St. Louis -> Boston
+
+		* Atlanta and Washington would not have been looked at by Dijkstra's alorithm as a temporary route because it would have already been determined that the quickest route to each was directly from St. Louis.  Therefore, only NY -> Boston would be checked against St. Louis -> Boston.
+
+
+8.	Compare data structures 
+
+	a) retrieve records by specifying product names
+		- balanced tree: sort by alphabet in O(log n)
+		- hash table: sort by indexing product names in O(1)
+
+	b) first n characters of product names to retrieve all records beginning with n characters
+		- balanced tree: sort by alphabet in O(log n) 
+		- hash table: key is made using ASCII value of strings works close to O(1) time
+
+	c) 20 operations per retrieval over 1,000,000 records -> as efficient as possible
+		- balanced tree: will never be better than O(log n)
+		- hash table: will approach O(1) with good choices when designing hash function and correct table size
+
+	d) ability to increase the size of the database without going offline
+		- balanced tree: will increase as needed without going offline
+		- hash table: to prevent overflow the array must be grown and re-hashing must take place
+
+	While reviewing the requirements it appears that both the hash table and balanced tree would be good possible solutions for the data base.  It would appear that the hash table would be the better option because it can perform all of the requirements, except for one, more efficiently (between O(log n) and O(1)).  However, the balanced tree would be the better choice because of the final requirement to increase the databases size without going offline.  If the database was initiated using a hash table the data would be stored as an array.  And, if the database needed to be increased in size, and the size increase required a smaller load factor, the array would need to be copied into a large array.  This is done to prevent overflow.  The process of copying into a larger array will require re-hashing for all of the data.  This would more than likely need to be brought offline to complete this task.  Therefore, the balanced tree data structure would meet the requirements best even though the efficiency is slightly less than the hash table's.  
+
+9.	Directed graphs and topological sort
+	
+	a)	The graph shown is a DAG because there are no cycles and the graph is directed with one sink, the vertex 'f.'
+
+		See the illustration prob9_1.pdf
+
+	b)	The second graph shows two cycles.  The first is CDF and the second is CDB.  Therefore this is not a DAG.
+
+
+10.  Determine if two vertices are adjacent
+
+	a)
+
+		public static boolean adjacent(Vertex a, Vertex b)
+		{
+			Edge e = a.edges;
+
+			while(e != null)
+			{
+				if(b.equals(e.end))
+				{
+					return true;
+				}
+
+				e = e.next;
+			}
+
+			return false
+		}
+
+	b) O(V+E) would be the worst case efficiency for a sparse graph because the algorithm searches all edges and the vertex at the end of each edge.  If the graph was dense the efficiency would be worse at O(V^2). 
+
+	c) If the representation of the graph eliminated directed edges we could modify the algorithm in part 'a' to iterate just the adjacency list, and not visit the vertices of the adjacency list.  Doing this would increase the efficiency to O(E), but again only for a sparse graph.  A dense graph would still be O(V^2). 
+
+11.	{Seattle}, {Denver}, {LA}, {St. Louis}, {Atlanta}, {Washington}, {NY}, {Boston}
+	{Seattle}, {Denver}, {LA}, {St. Louis}, {Atlanta}, {Washington}, {NY, Boston}
+	{Seattle}, {Denver}, {LA}, {St. Louis}, {Atlanta}, {Washington, NY, Boston}
+	{Seattle}, {Denver}, {LA}, {St. Louis, Atlanta}, {Washington, NY, Boston}
+	{Seattle}, {Denver}, {LA}, {St. Louis, Atlanta, Washington, NY, Boston}
+	{Seattle}, {LA}, {Denver, St. Louis, Atlanta, Washington, NY, Boston}
+	{Seattle}, {LA, Denver, St. Louis, Atlanta, Washington, NY, Boston}
+	{Seattle, LA, Denver, St. Louis, Atlanta, Washington, NY, Boston}
